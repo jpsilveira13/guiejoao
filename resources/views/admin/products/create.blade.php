@@ -36,6 +36,19 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Situation *</label>
+                        <select name="situation" class="form-control">
+                            <option value="">Select option</option>
+                            <option value="A">Active</option>
+                            <option value="N">Not Active</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Name *</label>

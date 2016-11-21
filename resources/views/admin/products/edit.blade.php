@@ -36,6 +36,19 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Situation *</label>
+                        <select name="situation" class="form-control">
+                            <option value="">Select option</option>
+                            <option @if($product->situation == "A") selected @endif value="A">Active</option>
+                            <option @if($product->situation == "N") selected @endif value="N">Not Active</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Name *</label>
@@ -59,6 +72,7 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="col-md-12">
                     <div class="form-group">
                         <label>Description *</label>

@@ -44,6 +44,16 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
         Route::get('edit/{id}', ['as' => 'products.edit', 'uses' => 'ProductController@editProduct']);
         Route::post('update/{id}', ['as' => 'products.update', 'uses' => 'ProductController@updateProduct']);
     });
+
+    Route::group(['prefix' => 'category'],function() {
+        Route::get('/', ['as' => 'category', 'uses' => 'CategoryController@allCategory']);
+        Route::get('/new', ['as' => 'category.create', 'uses' => 'CategoryController@newCategory']);
+
+        Route::post('/store', ['as' => 'category.store', 'uses' => 'CategoryController@store']);
+        // Route::get('excluir/{id}', ['as' => 'arquivos.delete', 'uses' => 'ArquivoController@deletaArquivo']);
+        Route::get('edit/{id}', ['as' => 'category.edit', 'uses' => 'CategoryController@editCategory']);
+        Route::post('update/{id}', ['as' => 'category.update', 'uses' => 'CategoryController@updateCategory']);
+    });
     # Admin Dashboard
     Route::get('dashboard', 'Admin\DashboardController@index');
 

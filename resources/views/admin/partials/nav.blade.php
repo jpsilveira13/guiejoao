@@ -20,15 +20,21 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{url('admin/language')}}">
-                        <i class="fa fa-language"></i> Language
-                    </a>
-                </li>
-                <li>
                     <a href="{{route('products')}}">
                         <i class="glyphicon glyphicon-barcode"></i> Products
                     </a>
                 </li>
+                <li>
+                    <a href="{{route('category')}}">
+                        <i class="	glyphicon glyphicon-tag"></i> Categories
+                    </a>
+                </li>
+                <li>
+                    <a href="{{url('admin/language')}}">
+                        <i class="fa fa-language"></i> Language
+                    </a>
+                </li>
+
                 <li>
                     <a href="#">
                         <i class="glyphicon glyphicon-bullhorn"></i> Articles
